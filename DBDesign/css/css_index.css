@@ -1,0 +1,61 @@
+.header{
+    width: 100%;
+    background-color: cyan;
+    position: relative;
+    height: 20%;
+    background-image: url("../img/head.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 10px;
+}
+.middle_left{
+    float: left;
+    width: 23%;
+    background-color: gray;
+    opacity: 0.8;
+    height: 95%;
+    margin: 10px;
+}
+.middle_right{
+    float: left;
+    width: 70%;
+    height: 90%;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: yellow;
+    border-style: groove;
+    border-width: 15px;
+}
+.middle{
+    width: 100%;
+    height: 70%;
+    background-image: url("../img/timg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.bottom{
+    background-color: brown;
+    width: 100%;
+    height: 10%;
+}
+
+.adv{
+    position: absolute;
+    /*background-image: url("../img/adv.jpg");*/
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size: 100% 100%;
+    height: 200px;
+    width: 300px;
+    z-index: 100;
+
+    left: 0px;
+    top: 0px;
+
+ }
+
+.header h1{
+    font-size: 60px;
+    font-family: fantasy;
+    text-align: center;
+}
