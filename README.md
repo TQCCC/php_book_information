@@ -1,3 +1,2 @@
 # php_book_information_management_system
-
-My green hand work
+大二学了点PHP，做了这个第一个PHP小项目
