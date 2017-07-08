@@ -1,6 +1,6 @@
 <?php
 include '../checklogin/check_login.php';
-login_filter('M');
+login_filter('M');      //检查登录，防止他人得知url后绕过管理员权限
 
     if ($_SERVER["REQUEST_METHOD"]=="POST") {
 

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -21,6 +21,7 @@
         <div class="middle">
             <div class="middle_left">
                 <?php
+		    error_reporting(0);
                     include 'checklogin/check_login.php';
                     session_start();
                     if ($_SESSION["manager_user"]) {    //若管理员已经登陆
@@ -30,6 +31,7 @@
                         echo "location.href='$url'";
                         echo "</SCRIPT>";
                     }
+                    //检查读者是否登录
                     check_login('R');
                  ?>
             </div>
@@ -62,7 +64,7 @@
         </div>
 
         <div class="bottom">
-            <h1 style="font-size:30px;font-family:fantasy;text-align:center">@Copyright: Designer: Tqc and Liu Xuan</h1>
+            <h1 style="font-size:30px;font-family:fantasy;text-align:center">@Copyright: Designer: TQC</h1>
         </div>
 
     </body>

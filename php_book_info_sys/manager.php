@@ -16,6 +16,15 @@
             <div class="middle_left">
                 <?php
                     include 'checklogin/check_login.php';
+                    session_start();
+                    if ($_SESSION["reader_user"]) {    //若读者已经登陆
+                        $url="http://localhost/1/DBDesign/index.php";
+                        echo "<h1>LOGIN.............</h1>";
+                        echo "<SCRIPT LANGUAGE='JavaScript'>";
+                        echo "location.href='$url'";
+                        echo "</SCRIPT>";
+                    }
+                    //检查管理员是否登录
                     check_login('M');
                  ?>
             </div>
